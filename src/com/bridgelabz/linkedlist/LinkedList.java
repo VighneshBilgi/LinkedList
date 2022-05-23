@@ -17,6 +17,7 @@ public class LinkedList<E> {
     }
 
     public void display(){
+
         Node<E> temp = head;
 
         while(temp!=null){
@@ -26,6 +27,20 @@ public class LinkedList<E> {
                 System.out.print("->");
             }
         }
+        System.out.println();
+    }
+
+    public void append(E data){
+        Node<E> newNode = new Node<>(data);
+
+        if(head == null){
+            head = newNode;
+            tail = newNode;
+        }else {
+            tail.next = newNode;
+            tail = newNode;
+        }
 
     }
+
 }
