@@ -17,5 +17,14 @@ public class LinkedListMain {
         linkedList1.append(70);
         System.out.println("Displaying the list of elements :");
         linkedList1.display();
+
+        LinkedList<Integer> linkedList2 = new LinkedList<>();
+        linkedList2.push(56);
+        linkedList2.push(70);
+        System.out.println("Before insertion: ");
+        linkedList2.display();
+        linkedList2.insert(30);
+        System.out.println("After insertion: ");
+        linkedList2.display();
     }
 }

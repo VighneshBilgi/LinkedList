@@ -42,6 +42,10 @@ public class LinkedList<E> {
         }
     }
 
-
+    public void insert(E data) {
+        Node<E> newNode = new Node<>(data);
+        head.next = newNode;
+        newNode.next = tail;
+    }
 
 }
