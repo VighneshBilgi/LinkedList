@@ -16,6 +16,6 @@ public class LinkedListMain {
         linkedList1.append(30);
         linkedList1.append(70);
         System.out.println("Displaying the list of elements :");
-        linkedList.display();
+        linkedList1.display();
     }
 }

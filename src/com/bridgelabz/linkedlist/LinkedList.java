@@ -40,7 +40,8 @@ public class LinkedList<E> {
             tail.next = newNode;
             tail = newNode;
         }
-
     }
+
+
 
 }
