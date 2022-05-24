@@ -48,4 +48,10 @@ public class LinkedList<E> {
         newNode.next = tail;
     }
 
+    public E pop() {
+        E data = head.data;
+        head = head.next;
+        return data;
+    }
+
 }
