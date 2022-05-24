@@ -3,6 +3,7 @@ package com.bridgelabz.linkedlist;
 public class LinkedListMain {
     public static void main(String[] args) {
         System.out.println("Welcome to the Linked List Program");
+        System.out.println();
 
         System.out.println("Adding elements into list");
         LinkedList<Integer> linkedList = new LinkedList();
@@ -11,6 +12,7 @@ public class LinkedListMain {
         linkedList.push(56);
         System.out.println("Displaying the list of elements :");
         linkedList.display();
+        System.out.println();
 
         System.out.println("Appending elements into list");
         LinkedList<Integer> linkedList1 = new LinkedList();
@@ -19,6 +21,7 @@ public class LinkedListMain {
         linkedList1.append(70);
         System.out.println("Displaying the list of elements :");
         linkedList1.display();
+        System.out.println();
 
         System.out.println("Inserting an element into list:");
         LinkedList<Integer> linkedList2 = new LinkedList<>();
@@ -29,6 +32,7 @@ public class LinkedListMain {
         linkedList2.insert(30);
         System.out.println("After insertion: ");
         linkedList2.display();
+        System.out.println();
 
         System.out.println("Popping an element from the list:");
         LinkedList<Integer> linkedList3 = new LinkedList<>();
@@ -38,9 +42,10 @@ public class LinkedListMain {
         System.out.println("Before Popping: ");
         linkedList3.display();
         linkedList3.pop();
-        System.out.println();
         System.out.println("After Popping: ");
         linkedList3.display();
+        System.out.println();
+
 
     }
 }
