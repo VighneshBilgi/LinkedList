@@ -58,5 +58,20 @@ public class LinkedListMain {
         linkedList4.display();
         System.out.println();
 
+        LinkedList <Integer> linkedList5 = new LinkedList<>();
+        linkedList5.push(70);
+        linkedList5.push(30);
+        linkedList5.push(56);
+        System.out.println("Searching for 30 in the list:");
+
+        if(linkedList3.search(30))
+        {
+            System.out.println("Element exists in the list");
+        }
+        else System.out.println("Element doesn't exist in the list");
+        System.out.println();
+
+
+
     }
 }
