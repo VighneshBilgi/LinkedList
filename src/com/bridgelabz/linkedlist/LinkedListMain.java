@@ -34,7 +34,7 @@ public class LinkedListMain {
         linkedList2.display();
         System.out.println();
 
-        System.out.println("Popping an element from the list:");
+        System.out.println("Popping first element from the list:");
         LinkedList<Integer> linkedList3 = new LinkedList<>();
         linkedList3.push(70);
         linkedList3.push(30);
@@ -46,6 +46,17 @@ public class LinkedListMain {
         linkedList3.display();
         System.out.println();
 
+        System.out.println("Popping last element from the list:");
+        LinkedList<Integer> linkedList4 = new LinkedList<>();
+        linkedList4.push(70);
+        linkedList4.push(30);
+        linkedList4.push(56);
+        System.out.println("Before PopLast: ");
+        linkedList4.display();
+        linkedList4.popLast();
+        System.out.println("After PopLast: ");
+        linkedList4.display();
+        System.out.println();
 
     }
 }
