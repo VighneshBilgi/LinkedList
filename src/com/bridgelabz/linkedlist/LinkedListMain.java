@@ -64,16 +64,28 @@ public class LinkedListMain {
         linkedList5.push(56);
         System.out.println("Searching for 30 in the list:");
 
-        if(linkedList3.search(30))
+        if(linkedList5.search(30))
         {
-            System.out.println("Element exists in the list");
+            System.out.println("Element 30 exists in the list");
             System.out.println("Inserting 40 after 30 in the list");
             linkedList5.insertAfter(30,40);
         }
-        else System.out.println("Element doesn't exist in the list");
+        else System.out.println("Element 30 doesn't exist in the list");
 
         linkedList5.display();
         System.out.println();
+        System.out.println("Searching for 40 in the list:");
 
+        if(linkedList5.search(40))
+        {
+            System.out.println("Element 40 exists in the list");
+            System.out.println("Deleting 40 from the list");
+            linkedList5.deleteElement(40);
+        }
+        else System.out.println("Element 30 doesn't exist in the list");
+
+        linkedList5.display();
+        linkedList5.size();
+        System.out.println();
     }
 }
