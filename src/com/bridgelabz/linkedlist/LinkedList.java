@@ -82,4 +82,19 @@ public class LinkedList<E> {
 
     }
 
+    public void insertAfter(E searchData,E insertData) {
+        Node<E> insertNode=new Node<>(insertData);
+        Node<E> searchedNode=new Node<>(searchData);
+        Node<E> temp=head;
+        while(temp!=null){
+            if(temp.data==searchData){
+                searchedNode=temp;
+                insertNode.next=searchedNode.next;
+                searchedNode.next=insertNode;
+                break;
+            }
+            temp=temp.next;
+        }
+    }
+
     }

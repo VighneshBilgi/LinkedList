@@ -67,11 +67,13 @@ public class LinkedListMain {
         if(linkedList3.search(30))
         {
             System.out.println("Element exists in the list");
+            System.out.println("Inserting 40 after 30 in the list");
+            linkedList5.insertAfter(30,40);
         }
         else System.out.println("Element doesn't exist in the list");
+
+        linkedList5.display();
         System.out.println();
-
-
 
     }
 }
