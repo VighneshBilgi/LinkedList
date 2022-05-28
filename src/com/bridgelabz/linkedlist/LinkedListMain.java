@@ -87,5 +87,17 @@ public class LinkedListMain {
         linkedList5.display();
         linkedList5.size();
         System.out.println();
+
+        SortedLinkedList <Integer> sortedLinkedList = new SortedLinkedList<>();
+        sortedLinkedList.add(70);
+        sortedLinkedList.add(40);
+        sortedLinkedList.add(30);
+        sortedLinkedList.add(56);
+        System.out.println("Elements of List before sorting:");
+        sortedLinkedList.display();
+        sortedLinkedList.sorting();
+        System.out.println("Elements of List after sorting:");
+        sortedLinkedList.display();
+
     }
 }

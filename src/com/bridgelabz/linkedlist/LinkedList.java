@@ -1,12 +1,14 @@
 package com.bridgelabz.linkedlist;
 
-public class LinkedList<E> {
+public class LinkedList<E extends Comparable<E>> {
 
      Node<E> head;
      Node<E> tail;
 
+
     public void push(E data) {
         Node<E> newNode = new Node<>(data);
+
         if(head == null){
             head = newNode;
             tail = newNode;
@@ -14,6 +16,7 @@ public class LinkedList<E> {
             newNode.next = head;
             head = newNode;
         }
+
     }
 
     public void display(){
@@ -119,5 +122,8 @@ public class LinkedList<E> {
         }
         System.out.println("Size of the linked list is: "+ count);
     }
+
+
+
 
     }
